@@ -57,11 +57,11 @@ $ErrorActionPreference = "Stop"
 
 # sign in
 Write-Host "Logging in...";
-#Login-AzureRmAccount;
+Login-AzureRmAccount;
 
 # select subscription
 # Write-Host "Selecting subscription '$subscriptionId'";
-$subscriptionId = '60b6165a-8669-47a2-860c-6ef475127364'
+$subscriptionId = 'SUBID'
 Select-AzureRmSubscription -SubscriptionID $subscriptionId;
 
 #Create or check for existing resource group
