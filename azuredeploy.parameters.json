@@ -2,14 +2,59 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "virtualMachineName": {
+      "value": "ws2016001"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_D2_v2"
+    },
     "adminUsername": {
-      "value": "GEN-USER"
+      "value": "user01"
+    },
+    "virtualNetworkName": {
+      "value": "MgmtUser01-vnet"
+    },
+    "networkInterfaceName": {
+      "value": "ws2016001608"
+    },
+    "networkSecurityGroupName": {
+      "value": "ws2016001-nsg"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "P@ssw0rd1234567"
     },
-    "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
+    "addressPrefix": {
+      "value": "10.0.0.0/24"
+    },
+    "subnetName": {
+      "value": "default"
+    },
+    "subnetPrefix": {
+      "value": "10.0.0.0/24"
+    },
+    "publicIpAddressName": {
+      "value": "ws2016001-ip"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    },
+    "autoShutdownStatus": {
+      "value": "Enabled"
+    },
+    "autoShutdownTime": {
+      "value": "19:00"
+    },
+    "autoShutdownTimeZone": {
+      "value": "Eastern Standard Time"
+    },
+    "autoShutdownNotificationStatus": {
+      "value": "Disabled"
     }
   }
 }
